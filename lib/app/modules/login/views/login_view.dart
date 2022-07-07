@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:task_management_app/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -107,7 +108,7 @@ class LoginView extends GetView<LoginController> {
                     height: Get.height * 0.5,
                   ),
                   FloatingActionButton.extended(
-                    onPressed: () {},
+                    onPressed: () => Get.toNamed(Routes.HOME),
                     label: const Text('Sign In With Google'),
                     icon: const Icon(
                       Ionicons.logo_google,
